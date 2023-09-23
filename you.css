@@ -1,0 +1,73 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style for the header section */
+header {
+  background-color: #f00;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 30px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-box input[type="text"] {
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.search-box button {
+  padding: 5px 10px;
+  margin-left: 5px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Style for the main content section */
+main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-container {
+  width: 560px;
+  height: 315px;
+}
+
+.video-details {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.video-details h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.video-details p {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Style for the footer section */
+footer {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+}

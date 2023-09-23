@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .gradient-text {
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .shadow-text {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    .outline-text {
+      -webkit-text-stroke: 2px black;
+    }
+    
+    .glow-text {
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+    
+    @keyframes glow {
+      from {
+        text-shadow: none;
+      }
+      to {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4), 0 0 40px rgba(255, 255, 255, 0.2);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="gradient-text">Gradient Text</h1>
+  <h1 class="shadow-text">Shadow Text</h1>
+  <h1 class="outline-text">Outline Text</h1>
+  <h1 class="glow-text">Glow Text</h1>
+</body>
+</html>

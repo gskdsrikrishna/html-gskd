@@ -1,0 +1,38 @@
+<html>
+<body>
+	<form>
+		<input type="button" value="Exception Button" onclick="Exception();"/>
+	</form>
+</body>
+<head>
+	<title>Function</title>
+</head>
+	<script type="text/javascript">
+		function Exception()
+		{
+			var a=5;
+			var b=0;
+		}
+		try
+		{
+			if(b==0)
+			{
+				throw("Division by zero eroor");
+			}
+			else
+			{
+				var c=a/b;
+				document.write(c);
+			}
+		}
+		catch(e)
+		{
+			alert("Error"+e);
+		}
+		finally
+		{
+			alert("Finally always exwcutes");
+		}
+	</script>
+</html>
+</html>

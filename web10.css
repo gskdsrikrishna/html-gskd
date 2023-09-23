@@ -1,0 +1,108 @@
+@import url('https://fonts.gstatic.com/css2?family=Poppins')
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+body {
+    overflow: hidden;
+}
+
+.hero {
+height: 100vh;
+width: 100%;
+display: flex;
+background: #d0cccc;
+}
+
+.hero::before,.hero::after
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.hero::after {
+    position: absolute;
+    top: -20%;
+    left: 76%;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: #ef30b6;
+}
+
+.hero::before {
+    position: absolute;
+    top: 76%;
+    left: -20%;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: #f6b141;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    backdrop-filter: blur(50px);
+    z-index: 12;
+    margin: auto;
+    position: relative;
+}
+
+header .navbar {
+    margin: auto;
+    width: 90%;
+    padding: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar .menu li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.navbar .menu a {
+    color: #000;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 17px;
+font-weight: bold;
+}
+
+.navbar .menu a:hover {
+    color: blue !important;
+}
+
+.navbar .nav-btn {
+    background: #000;
+    outline: none;
+    color: #f2f2f2;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 5px 5px 30px #000;
+}
+
+.navbar .nav-btn:hover {
+    color: deeppink;
+    background: skyblue;
+}
+

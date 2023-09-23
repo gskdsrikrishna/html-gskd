@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+<style>
+.toggle-switch {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.toggle-checkbox {
+  display: none;
+}
+
+.toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.toggle-checkbox:checked + .toggle-label {
+  transform: translateX(30px);
+}
+
+
+</style>
+</head>
+<body>
+  <div class="toggle-switch">
+    <input type="checkbox" class="toggle-checkbox" id="toggle">
+    <label class="toggle-label" for="toggle"></label>
+  </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Navigation Bar</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="navigation">
+            <ul>
+
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"></span>
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"></span>
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                        <span class="text">Profile</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"></span>
+                    <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+                    <span class="text">Messages</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"></span>
+                    <ion-icon name="help-circle-outline"></ion-icon>
+                    <span class="text">Help</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"></span>
+                    <ion-icon name="settings-outline"></ion-icon>
+                    <span class="text">Settings</span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+        </div>
+
+        <script>
+            let list = document.querySelectorAll('.list');
+            function setActiveClass() {
+                list.forEach(item) =>
+                item.classList.remove('active');
+                item.classList.add('active');
+            }
+            list.forEach(item) =>
+            item.addEventListener('mouseover','setActiveClass')
+        </script>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    </body>
+</html>

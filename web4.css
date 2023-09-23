@@ -1,0 +1,164 @@
+@import url('https://fonts.gstatic.com/css2?family=Poppins')
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: url("web1.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* section {
+    min-height: 100vh;
+    background: url('web1.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: animateBg 5s linear infinite;
+}
+
+@keyframes animateBg {
+    100% {
+        filter:hue-rotate(360deg);
+    }
+} */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100%;
+    background: rgba(0,0,0,-5);
+    backdrop-filter: blur(5px);
+    padding: 6px 6px;
+}
+
+.sidebar .logo-content .logo {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    width: 100px;
+    height: 50px;
+    pointer-events: none;
+}
+
+.logo-content .logo i {
+    font-size: 28px;
+    margin-right: 5px;
+}
+
+.logo-content .logo h3 {
+    font-size: 28px;
+}
+
+.sidebar #btn {
+    position: absolute;
+    top: 6px;
+    left: 235px;
+    transform: translateX(-50%);
+    color: #ffffff;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.sidebar ul {
+    margin-top: 20px;
+}
+
+.sidebar ul li {
+    position: relative;
+    width: 80%;
+    height: 30px;
+    list-style: none;
+    margin: 10px 0;
+    line-height: 50px;
+}
+
+.sidebar ul li input {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 75%;
+    height: 100%;
+    background: rgba(255,255,255,.1);
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    padding-left: 40px;
+    font-size: 18px;
+    color:#ffffff;
+}
+
+.sidebar ul li .bx-search-alt {
+    position: absolute;
+    color: #ffffff;
+    font-size: 20px;
+    z-index: 99;
+}
+
+.sidebar ul li a {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    white-space: nowrap;
+    transition: .5s ease;
+}
+
+.sidebar ul li a:hover {
+    background: rgba(255,255,255,.1);
+    height: 50px;
+    width: 50px;
+}
+
+.sidebar ul li i {
+    min-width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+.sidebar .list-logout {
+    position: absolute;
+    bottom: 0;
+    margin: 15px 0;
+    width: 70%;
+}
+
+.sidebar ul li .tooltip {
+    position: absolute;
+    top: 0;
+    left: 130px;
+    transform: translate(-50%,-50%);
+    width: 122px;
+    height: 35px;
+    background: #327aff;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    text-align: center;
+    line-height: 35px;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.sidebar ul li:hover .tooltip {
+    transition: .5s ease;
+    top:50%;
+    opacity: 1;
+}
+
+.sidebar .links-name {
+    opacity: 0;
+    pointer-events: none;
+}

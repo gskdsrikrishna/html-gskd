@@ -1,0 +1,50 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style for the header section */
+header {
+  background-color: #f60;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 30px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-box input[type="text"] {
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+}
+
+.search-box button {
+  padding: 5px 10px;
+  margin-left: 5px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Style for the main content section */
+main {
+  padding: 20px;
+}
+
+/* Style for the footer section */
+footer {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+}

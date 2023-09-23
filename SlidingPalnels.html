@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .panel-container {
+      position: relative;
+      overflow: hidden;
+      height: 200px;
+    }
+
+    .panel {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #f1f1f1;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .panel.slide-in {
+      transform: translateX(0);
+    }
+
+    .panel.slide-out {
+      transform: translateX(-100%);
+    }
+  </style>
+</head>
+<body>
+  <div class="panel-container">
+    <div class="panel slide-in">
+      <!-- Content of the first panel -->
+    </div>
+    <div class="panel slide-out">
+      <!-- Content of the second panel -->
+    </div>
+  </div>
+
+  <button onclick="togglePanels()">Toggle Panels</button>
+
+  <script>
+    function togglePanels() {
+      const panels = document.querySelectorAll('.panel');
+      panels.forEach(panel => {
+        panel.classList.toggle('slide-in');
+        panel.classList.toggle('slide-out');
+      });
+    }
+  </script>
+</body>
+</html>

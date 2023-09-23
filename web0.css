@@ -1,0 +1,140 @@
+@import url('https://fonts.gstatic.com/css2?family=Poppins')
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+.container1 {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    right: 75%;
+    bottom: 50%;
+    border-radius: 10px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background: #09dbca;
+    box-shadow: 0 5px 10px rgba(0,0,0,5);
+}
+
+.container2 {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    right: 50%;
+    bottom: 50%;
+    border-radius: 10px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background: #09dbca;
+    box-shadow: 0 5px 10px rgba(0,0,0,5);
+}
+
+.container3 {
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    right: 25%;
+    bottom: 50%;
+    border-radius: 10px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background: #09dbca;
+    box-shadow: 0 5px 10px rgba(0,0,0,5);
+}
+
+.container1 .content1 a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 65px;
+    background:#ff0562;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 25px;
+    margin-left: 35px;
+    border-radius: 25px;
+    border-bottom: 4px solid #d00d56;
+}
+
+.container2 .content2 a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 65px;
+    background:#ff0562;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 25px;
+    margin-left: 35px;
+    border-radius: 25px;
+    border-bottom: 4px solid #d00d56;
+}
+
+.container3 .content3 a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 65px;
+    background:#ff0562;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 25px;
+    margin-left: 45px;
+    border-radius: 25px;
+    border-bottom: 4px solid #d00d56;
+}
+
+.container1 .content1 h2 {
+    font-size: 40px;
+    color: #ffff;
+    line-height: 30px;
+}
+
+.container2 .content2 h2 {
+    font-size: 40px;
+    color: #ffff;
+    line-height: 30px;
+}
+
+.container3 .content3 h2 {
+    font-size: 40px;
+    color: #ffff;
+    line-height: 30px;
+}
+
+.container1 .content1 h4 {
+    position: relative;
+    font-size: 1em;
+    margin-bottom: 1px;
+    color: #000000;
+    background: #fff;
+    font-weight: 300;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.container2 .content2 h4 {
+    position: relative;
+    font-size: 1em;
+    margin-bottom: 1px;
+    color: #000000;
+    background: #fff;
+    font-weight: 300;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.container3 .content3 h4 {
+    position: relative;
+    font-size: 1em;
+    margin-bottom: 1px;
+    color: #000000;
+    background: #fff;
+    font-weight: 300;
+    padding: 10px 20px;
+    display: inline-block;
+}
