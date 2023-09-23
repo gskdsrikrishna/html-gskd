@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat GPT</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        #chat-container {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            max-width: 90%;
+            padding: 20px;
+        }
+
+        #chat {
+            overflow-y: auto;
+            max-height: 300px;
+        }
+
+        #chat div {
+            margin-bottom: 5px;
+        }
+
+        #user-input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        button:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chat GPT</h1>
+    <div id="chat-container">
+        <div id="chat"></div>
+        <input type="text" id="user-input" placeholder="Type your message..." autofocus />
+        <button onclick="sendMessage()">Send</button>
+    </div>
+    <script>
+        function appendMessage(sender, content) {
+            $("#chat").append("<div><strong>" + sender + ":</strong> " + content + "</div>");
+        }
+
+        function sendMessage() {
+            var user_input = $("#user-input").val();
+            appendMessage("You", user_input);
+            $("#user-input").val("");
+
+            // Send user input to the server
+            $.post("/get_response", {user_input: user_input}, function(data) {
+                var response = data.response;
+                appendMessage("Bot", response);
+            });
+        }
+
+        // Press Enter key to send message
+        $("#user-input").on("keydown", function(event) {
+            if (event.which === 13) {
+                sendMessage();
+            }
+        });
+    </script>
+</body>
+</html>

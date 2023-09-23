@@ -1,0 +1,32 @@
+@import url('https://foints.googleapis.com/css2?family=Roboto&dispaly=swap');
+body {
+    padding: 10%;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    opacity: 0.4;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: green;
+}
+
+a:visited {
+    color: yellow;
+}
+
+a:hover,a:focus {
+    color: aqua;
+    opacity: 1;
+    background: gold;
+}
+
+a:active {
+    color: pink;
+}
+
+

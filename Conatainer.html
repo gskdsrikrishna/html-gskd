@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello, World! Python Program</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.navbar {
+    background-color: #1a73e8;
+    color: #fff;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.navbar h2 {
+    margin-bottom: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar li {
+    margin-bottom: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.content {
+    margin-left: 220px;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+    color: black;
+}
+
+.content h1 {
+    margin-bottom: 20px;
+}
+
+.theme-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #1a73e8;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dark-theme {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.copy-btn {
+    padding: 10px 20px;
+    background-color: #1a73e8;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.copy-btn:focus {
+    outline: none;
+}
+
+    </style>
+</head>
+<body>
+    <div class="navbar" id="navbar">
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <button class="toggle-btn" onclick="toggleNavbar()">☰</button>
+    </div>
+
+    <div class="content">
+        <div class="container">
+            <h1>Hello, World! Program in Python</h1>
+            <pre><code>print("Hello, World!")</code></pre>
+            <button class="copy-btn" onclick="copyCode()">Copy Code</button>
+        </div>
+    </div>
+
+    <button class="theme-btn" onclick="toggleTheme()">Toggle Theme</button>
+
+    <script>
+        function toggleNavbar() {
+    var navbar = document.getElementById('navbar');
+    navbar.classList.toggle('closed');
+}
+
+function toggleTheme() {
+    var body = document.body;
+    body.classList.toggle('dark-theme');
+}
+
+function copyCode() {
+    var codeElement = document.querySelector("code");
+    var textArea = document.createElement("textarea");
+    textArea.value = codeElement.textContent;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textArea);
+    alert("Code copied to clipboard!");
+}
+
+    </script>
+</body>
+</html>

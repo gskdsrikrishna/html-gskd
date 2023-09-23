@@ -1,0 +1,14 @@
+<script>
+function myFunction() {
+ document.getElementById("demo").style.color = "red";
+}
+function myFunction1() {
+ document.getElementById("field2").value = document.getElementById("field1").value;
+}
+function myFunction2() {
+ document.getElementsByTagName("BODY")[0].style.backgroundColor = "yellow";
+}
+</script>
+<p id="demo" onclick="myFunction()">Click me to change my text color.</p>
+<button onclick="myFunction1()">Copy Text</button>
+<body onclick="myFunction2()"></body>

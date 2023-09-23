@@ -1,0 +1,41 @@
+* {
+    font-family: monospace;
+    /* border: 1px solid red; */
+}
+
+body {
+    font-size: 18px;
+}
+
+/* main {
+    font-family: monospace;
+} */
+
+html {
+    font-size: 30px;
+}
+
+h1,h2 {
+    color: deepskyblue;
+}
+
+p {
+    color: blue;
+}
+
+.para {
+    color: red !important;
+}
+
+#first {
+    font-style: italic;
+}
+
+p span {
+    text-transform: uppercase;
+    background-color: gold;
+}
+
+.krishna {
+    background-color: red;
+}

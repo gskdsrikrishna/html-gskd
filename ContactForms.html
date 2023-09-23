@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+<style>
+.contact-form {
+  text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #e53935;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+  <div class="contact-form">
+    <form>
+      <input type="text" id="name-input" name="name-input" placeholder="Your name">
+      <input type="email" id="email-input" name="email-input" placeholder="Your email">
+      <textarea id="message-input" name="message-input" placeholder="Your message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</body>
+</html>

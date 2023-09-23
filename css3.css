@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 80%;
+}
+
+main {
+    font-size: 2em;
+    width: 50vw;
+    background-color: skyblue;
+}
+
+html {
+    font-size: 25px;
+    font-size: 2rem;
+}
+
+h1 {
+    border: 2px dashed red;
+    width: 50%;
+    font-size: 3em;
+    padding: 1em;
+}
+
+body {
+    width: 100%;
+}
+
+p {
+    font-size: 2em;
+    width: 40ch;
+}
