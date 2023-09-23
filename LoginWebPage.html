@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login with Google</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 400px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.logo-container img {
+    height: 40px;
+}
+
+h1 {
+    margin: 10px 0;
+    color: #1a73e8;
+}
+
+.google-btn {
+    display: inline-block;
+    background-color: #1a73e8;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.google-btn:hover {
+    background-color: #0c60c5;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="google_logo.png" alt="Google Logo">
+            <h1>Login with Google</h1>
+        </div>
+        <div id="google-signin-button" class="google-btn"></div>
+    </div>
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script>
+        function onSignIn(googleUser) {
+    // Get the user's profile information
+    var profile = googleUser.getBasicProfile();
+    
+    // Display the user's name and email
+    var name = profile.getName();
+    var email = profile.getEmail();
+
+    // You can use the user's information for further processing or authentication
+    // For example, you can send the user's email to the server for login validation
+
+    // Redirect or perform additional actions after successful login
+    // Example: window.location.href = "dashboard.html";
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu {
+          display: flex;
+          margin-top: 20px;
+        }
+        .menu li {
+          list-style-type: none;
+          font-size: 18px;
+          font-weight: bold;
+          color: #FFFFFF;
+          background-color: #2df5e5;
+          padding: 10px;
+          margin: 5px;
+          border-radius: 10px;
+          box-shadow: 1px 1px 5px #000000;
+        }
+        .menu li:hover {
+          background-color: #3899EC;
+          color: #FFFFFF;
+        }
+      </style>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li>Services</li>
+        <li>Contact</li>
+        <li>Gskd</li>
+      </ul>
+      <button onclick="darkMode()" ondblclick="brightMode()">Dark Mode</button>
+
+      <form action="/upload" method="post" enctype="multipart/form-data">
+        Select files to upload:
+        <input type="file" name="files[]" multiple />
+        <input type="submit" value="Upload" />
+    </form>
+
+<script>
+  function darkMode() {
+    document.body.style.backgroundColor = "black";
+    document.body.style.color = "white";
+  }
+  function brightMode() {
+    document.body.style.backgroundColor = "white";
+    document.body.style.color = "black";
+  }
+</script>
+</body>
+</html>
+
